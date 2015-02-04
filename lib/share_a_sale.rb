@@ -32,7 +32,7 @@ module ShareASale
     end
 
     def authentication_hash
-      Digest::SHA256.hexdigest(string_to_hash).upcase
+      Digest::SHA256.hexdigest(string_to_hash)
     end
 
     def url
